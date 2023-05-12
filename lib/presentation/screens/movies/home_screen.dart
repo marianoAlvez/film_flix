@@ -1,5 +1,5 @@
+import 'package:film_flix/config/constants/environment.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_dotenv/flutter_dotenv.dart';
 
 class HomeScreen extends StatelessWidget {
   static const name = 'home-screen';
@@ -9,7 +9,7 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: Text(dotenv.env['OMDB_API_KEY'] ?? 'No exite la api key'),
+        child: Text(Environment.movieApiKey),
       ),
     );
   }
