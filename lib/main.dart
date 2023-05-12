@@ -1,4 +1,7 @@
+import 'package:film_flix/config/router/app_router.dart';
 import 'package:flutter/material.dart';
+
+import 'config/theme/app_theme.dart';
 
 void main() {
   runApp(const MyApp());
@@ -9,15 +12,10 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-        debugShowCheckedModeBanner: false,
-        home: Scaffold(
-          appBar: AppBar(
-            title: Text('My First App'),
-          ),
-          body: const Center(
-            child: Text('Hello World'),
-          ),
-        ));
+    return MaterialApp.router(
+      routerConfig: appRouter,
+      debugShowCheckedModeBanner: false,
+      theme: AppTheme().getTheme(),
+    );
   }
 }
