@@ -8,6 +8,6 @@
 'https://developer.themoviedb.org/reference/intro/getting-started'.
 3. En terminar ejecutar el comando `flutter pub get`.
 4. Abrir el emulador de android o ios.
-5. Ejecutar el comando `flutter run`.
+5. Ejecutar la app con F5.
 
 
